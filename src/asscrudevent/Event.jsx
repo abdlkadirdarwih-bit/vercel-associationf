@@ -128,8 +128,8 @@ function Events() {
 
 
 useEffect(() => {
-  // axios.get(`${backendUrl}/events`)
-    axios.get("http://localhost:3001/events")
+  axios.get(`${backendUrl}/events`)
+    // axios.get("http://localhost:3001/events")
 
     .then(result => {
       const data = result.data;

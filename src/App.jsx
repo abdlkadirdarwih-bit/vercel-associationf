@@ -42,7 +42,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Admin from './asscrudevent/admin.jsx'
+// import Admin from './asscrudevent/admin.jsx'
 // import "./asscrudevent/admin.css";
 
 import Events from './asscrudevent/Event.jsx'
