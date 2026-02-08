@@ -89,8 +89,8 @@ const Servicesass = () => {
   useEffect(() => {
 
     // Fetch data from your backend API 
-    // axios.get(`${backendUrl}/`)
-      axios.get('http://localhost:3001/services')
+    axios.get(`${backendUrl}/services`)
+      // axios.get('http://localhost:3001/services')
 
       .then((res) => {
         console.log('see product :', res.data);

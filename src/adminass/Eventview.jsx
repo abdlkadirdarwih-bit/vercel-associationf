@@ -110,8 +110,8 @@ export default function Eventview() {
 
   useEffect(() => {
     // Fetch data from your backend API 
-    // axios.get(`${backendUrl}/`)
-    axios.get('http://localhost:3001/events')
+    axios.get(`${backendUrl}/events`)
+    // axios.get('http://localhost:3001/events')
 
       .then((res) => {
         console.log('see product :', res.data);

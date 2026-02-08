@@ -79,7 +79,7 @@ import { useNavigate } from 'react-router-dom';
 
 
 
-import { servicesData } from './servicesData';
+// import { servicesData } from './servicesData';
 
 const ServiceCard = ({ mainImage, title, description }) => {
   return (
@@ -124,8 +124,8 @@ const ServicesPage = () => {
   useEffect(() => {
 
     // Fetch data from your backend API 
-    // axios.get(`${backendUrl}/`)
-      axios.get('http://localhost:3001/services')
+    axios.get(`${backendUrl}/services`)
+      // axios.get('http://localhost:3001/services')
 
       .then((res) => {
         console.log('see product :', res.data);

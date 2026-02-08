@@ -43,8 +43,8 @@ export default function Contactass() {
         // Clear errors if all good
         setErrors({});
 
-        // axios.post(`${backendUrl}/contactassociation`, {
-            axios.post('http://localhost:3001/contactassociation',{
+        axios.post(`${backendUrl}/contactassociation`, {
+            // axios.post('http://localhost:3001/contactassociation',{
 
             fullname,
             phonenumber,

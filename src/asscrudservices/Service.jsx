@@ -129,8 +129,8 @@ function Services() {
 
 
 useEffect(() => {
-  // axios.get(`${backendUrl}/`)
-    axios.get("http://localhost:3001/services")
+  axios.get(`${backendUrl}/services`)
+    // axios.get("http://localhost:3001/services")
 
     .then(result => {
       const data = result.data;
@@ -152,8 +152,8 @@ useEffect(() => {
 
 
 const confirmDeleteEvent = (id) => {
-  // axios.delete(`${backendUrl}/services/` + id)
-    axios.delete("http://localhost:3001/services/" + id)
+  axios.delete(`${backendUrl}/services/` + id)
+    // axios.delete("http://localhost:3001/services/" + id)
 
     .then(() => {
       setEvents(prev => prev.filter(e => e._id !== id)); // remove without reload

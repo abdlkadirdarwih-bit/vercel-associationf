@@ -54,9 +54,9 @@ const compressed = await imageCompression(file, {
     e.preventDefault();
   const backendUrl = import.meta.env.VITE_BACKEND_URL;
 // "http://localhost:3001/createUser",
-    axios.post("http://localhost:3001/services", {
+    // axios.post("http://localhost:3001/createservices", {
 
-      // .post(`${backendUrl}/createEventBase64`, {
+      axios.post(`${backendUrl}/createservices`, {
 
         mainImage: mainImageBase64,
       

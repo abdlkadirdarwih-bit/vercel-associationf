@@ -87,8 +87,8 @@ const compressed = await imageCompression(file, {
   const backendUrl = import.meta.env.VITE_BACKEND_URL;
 // "http://localhost:3001/createUser",
     axios
-      // .post(`${backendUrl}/createEventBase64`, {
-            .post("http://localhost:3001/createEventBase64", {
+      .post(`${backendUrl}/createEventBase64`, {
+            // .post("http://localhost:3001/createEventBase64", {
 
         mainImage: mainImageBase64,
         images: imagesBase64.filter(Boolean), // remove empty slots

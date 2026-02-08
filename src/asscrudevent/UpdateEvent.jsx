@@ -329,8 +329,8 @@ const [confirmImageIndex, setConfirmImageIndex] = useState(null);
   // Load event from backend
   useEffect(() => {
     axios
-      // .get(`${backendUrl}/getEvent/${id}`)
-      .get("http://localhost:3001/getEvent/${id}")
+      .get(`${backendUrl}/getEvent/${id}`)
+      // .get("http://localhost:3001/getEvent/${id}")
       .then((res) => {
         const d = res.data;
         setDate(d.date || "");

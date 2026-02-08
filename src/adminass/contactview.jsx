@@ -31,9 +31,9 @@ export default function Contactview() {
 
 
   useEffect(() => {
-    axios.get('http://localhost:3001/contactschool')
+    // axios.get('http://localhost:3001/contactschool')
 
-      // axios.get(`${backendUrl}/contactschool`)
+      axios.get(`${backendUrl}/contactschool`)
       .then(res => {
         setContacts(res.data);
       })
