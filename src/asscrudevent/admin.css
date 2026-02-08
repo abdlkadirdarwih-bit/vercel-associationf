@@ -1,0 +1,329 @@
+
+
+
+.page-admins{
+     /* width: 100%; */
+       width: 99vw;
+  min-height: 100vh; 
+    margin-top: 100px;
+    /* margin-right: 10px; */
+  /* background-color: rgb(205, 230, 155); */
+  /* border: 1px solid; */
+  /* overflow-x: hidden;  */
+}
+
+
+.btn-event {
+  /* width: 100%; */
+  display: flex;
+  justify-content: flex-end;
+  background-color: #4CAF50;
+  color: white;
+    float: right;       
+
+  padding: 5px 12px;
+  margin-top: 135px ;
+  margin-right:190px ;
+  /* margin-left: 1200px; */
+  font-size: 1rem;
+    transition: background 0.2s;
+
+}
+
+.btn-event:hover {
+  background-color: #388E3C;
+}
+.page-admin1{
+     /* width: 100%; */
+  /* display: flex; 
+  flex-wrap: wrap; */
+  /* min-height: 600px; */
+ padding-top: 195px;
+ 
+  /*border: 1px solid; */
+}
+.page-admin2{
+     /* width: 100%; */
+  display: flex; 
+  flex-wrap: wrap;
+    align-items: flex-start;  /* ← IMPORTANT */
+  justify-content: center;
+  gap: 20px;
+  /* min-height: 600px; */
+  /* padding-top: 195px; */
+/* border: 1px solid; */
+}
+
+
+
+
+/* event admin css */
+.sect3-admin {
+  /* display: block; */
+  margin-bottom: 20px;
+      /* min-height: 700px; */
+  /* margin-right: 10px; */
+
+  /* background-color: rgb(243, 176, 240); */
+}
+
+.sect3admin{
+  /* font-family: "Montserrat", sans-serif; */
+  /* width: 1200px; */
+  /* min-height: 800px; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* width: 100%; */
+
+  max-width: 800px;
+  /* padding-left: 0px; */
+  /* margin: 10px; */
+  /* margin-left: 15px; */
+  /* margin-right: 10px; */
+    /* min-height: 700px; */
+  /* margin: 10px; */
+   margin: 0 auto; 
+/* margin: 0 auto 0 20px;  */
+  gap: 10px;
+  border: 3px solid rgb(205, 230, 155);
+    overflow: hidden;
+  box-sizing: border-box;
+
+  /* margin: 0px 0px 0px 0px; */
+  /* padding-left: 150px; */
+  /* box-shadow: 3px 2px 5px rgb(127, 212, 149); */
+  /* background-color: rgb(243, 176, 240); */
+}
+
+.title-sec2-event {
+  /* width: 100px; */
+  text-align: center;
+  font-size: 28px;
+  font-weight: 500;
+  padding: 20px 10px 0px 0px;
+  color: rgb(226, 75, 75);
+  /* background-color: rgb(55, 168, 11); */
+  /* margin-bottom: 10px; */
+}
+
+
+.description-sec2-event {
+  /* width: 100px; */
+  text-align: center;
+  font-size: 18px;
+  /* font-weight: 500; */
+  padding: 10px 10px 0px 0px;
+  color: black;
+  /* margin-bottom: 10px; */
+}
+
+
+.title-text-sec3-events {
+    text-align: center;
+
+}
+.title-sec3-events {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  padding: 80px 0px 20px 0px;
+    color:  #a9ce64;
+}
+
+.text-sec3-events {
+  /* width: 100px; */
+  text-align: center;
+  font-size: 20px;
+  /* font-weight: 500; */
+  padding: 10px 10px 40px 0px;
+  color: black;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+/* css of contacts-table-messages */
+
+.contacts-table-messages-wrapper {
+  /* width: 100%;    */
+             /* prevent breaking on small screens */
+             width: 45%;  
+  display: flex;              /* use flexbox */
+  justify-content: center;
+  align-items: center;
+    align-self: flex-start;
+    margin-top: 0px;
+  border: 3px solid rgb(205, 230, 155);
+  /* justify-content: flex-end;  */
+    /* overflow-x: auto;   */
+        /* ✅ enable horizontal scroll only if needed */
+
+}
+
+.contacts-table-messages {
+  width: 100%;  
+                 /* table is 40% of the page */
+  max-width: 1280px;          
+  border-collapse: collapse;
+    /* table-layout: fixed;  */
+      /* ✅ forces cells to shrink and wrap */
+margin: 10px;
+  font-family: Arial, sans-serif;
+  background: #fff;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.thead-messages {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.thead-messages-th {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.tr-messages td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+   white-space: normal;   /* ✅ allow text to wrap */
+ word-wrap: break-word; /* ✅ break long words if needed */
+  overflow-wrap: break-word; /* ✅ modern equivalent */
+  max-width: 200px;      /* optional: limit column width */
+}
+
+.tr-messages:hover {
+  /* background-color: #f9f9f9; */
+  transition: 0.2s ease-in;
+}
+
+.tr-messages td:first-child {
+  text-align: center;
+  width: 50px;
+  font-weight: bold;
+}
+
+/* 📱 Responsive rule: on smaller screens, make table full width */
+/* @media (max-width: 768px) {
+    .contacts-table-messages-wrapper {
+            width: 100%;  
+    justify-content: center;  
+     margin: 10px;
+  }
+  .contacts-table-messages {
+    width: 90% !important;    
+  }
+} */
+
+
+.btn-delete-message {
+  /* background: red; */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btn-delete-message:hover {
+  background: rgb(223, 127, 127);
+}
+
+
+
+
+.confirm-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(241, 231, 231, 0.096);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.confirm-box {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.confirm-box button {
+  /* background: white;
+  padding: 20px;
+  border-radius: 8px; */
+  margin-left: 10px;
+  /* text-align: center; */
+}
+
+
+@media (max-width: 768px) {
+  
+  /* .page-admin2 {
+    flex-direction: column;
+    align-items: center;
+  } */
+
+  .sect3admin {
+    width: 95%;
+    max-width: 95%;
+    /* margin: 0 auto; */
+  }
+  
+  .contacts-table-messages-wrapper {
+    width: 100%;
+    justify-content: center;
+        margin:5px;
+
+    /* overflow-x: auto; */
+      /* allow horizontal scroll only on very small devices */
+  }
+
+  .contacts-table-messages {
+    width: 95%;
+    max-width: none;
+    table-layout: fixed;
+    font-size: 14px;   /* smaller text on mobile */
+  }
+
+  .tr-messages td,
+  .thead-messages-th {
+    padding: 8px;       /* less padding for small screens */
+    max-width: 100px;   /* limit width to avoid overflow */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

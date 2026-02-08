@@ -1,0 +1,311 @@
+
+
+
+.events-container {
+  width: 99vw;
+  min-height: 100vh;
+  margin-top: 110px;
+  background: rgb(205, 230, 155);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.events-wrapper {
+  width: 90%;
+  max-width: 1100px;
+  background: #fff;
+  border-radius: 12px;
+    margin: 10px;
+  padding: 20px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+
+.btn-add-event {
+  display: inline-block;
+  padding: 8px 15px;
+  margin-bottom: 15px;
+  background: #28a745;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+.btn-add-event:hover {
+  background: #218838;
+    /* display: none; */
+    text-decoration: none;
+    /* color: inherit; */
+    color: white;
+
+}
+
+.table-responsive-events {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table-events {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.thead-events {
+  background: #f4f4f4;
+}
+
+.tr-events {
+  border-bottom: 1px solid #ddd;
+}
+
+.th-events,
+.td-events {
+
+  padding: 10px;
+  text-align: center;
+  font-size: 17px;
+    white-space: normal;   /* ✅ allow text to wrap */
+ word-wrap: break-word; /* ✅ break long words if needed */
+  overflow-wrap: break-word; /* ✅ modern equivalent */
+  max-width: 200px;      /* optional: limit column width */
+}
+/* .td-events:nth-child(6),  text column
+.td-events:nth-child(5) { title column
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 250px;
+} */
+.main-image-event {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.images-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.image-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sub-image-event {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 4px;
+}
+
+.btn-delete-img {
+  padding: 3px 8px;
+  font-size: 12px;
+  background: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn-delete-img:hover {
+  background: #c82333;
+}
+
+.actions-events {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.btn-update-event,
+.btn-delete-event {
+  padding: 5px 10px;
+  font-size: 13px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-update-event {
+  background: #28a745;
+  color: #fff;
+}
+.btn-update-event:hover {
+  background: #218838;
+      color: white;
+}
+
+.btn-delete-event {
+  background: #dc3545;
+  color: #fff;
+}
+.btn-delete-event:hover {
+  background: #c82333;
+}
+
+/* ✅ Responsive */
+/* @media (max-width: 768px) {
+  .thead-events {
+    display: block;
+  }
+
+  .tr-events {
+    display: block;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+  }
+
+  .td-events {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    padding: 6px 0;
+    border: none;
+    
+  }
+
+  .td-events::before {
+    content: attr(data-label);
+    font-weight: bold;
+    flex: 1;
+    padding-right: 10px;
+  }
+} */
+
+
+.confirm-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  /* background: rgba(0,0,0,0.5); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.confirm-box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 300px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.041);
+}
+
+.btn-yes {
+  background: red;
+  color: #fff;
+  margin-right: 10px;
+  padding: 8px 12px;
+}
+
+.btn-cancel {
+  background: gray;
+  color: #fff;
+  padding: 8px 12px;
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  /* Each table row becomes a vertical card */
+  .tr-events {
+    display: block;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 10px;
+  }
+
+  /* Each table cell becomes a block (stacked vertically) */
+  .td-events {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 8px 0;
+    border: none;
+    white-space: normal;        /* ✅ allow wrapping */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  /* Hide table headers for mobile */
+  .thead-events {
+    /* display: none; */
+  }
+
+  /* Text columns wrap properly */
+  .td-events:nth-child(5),
+  .td-events:nth-child(6) {
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  /* Main image full width */
+  .main-image-event {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+
+  /* ✅ Responsive image grid: 2–3 per row */
+  .images-grid {
+  display: flex;            /* Use flex instead of grid */
+  flex-wrap: wrap;          /* Allow wrapping to next line */
+  gap: 8px;                 /* Space between images */
+  width: 100%;
+  justify-content: flex-start; /* Align images to the left */
+  }
+
+  .image-wrapper {
+            /* About 2 per row */
+   /* flex: 1 1 45%;       
+  max-width: 45%; */
+    flex: 1 1 30%; /* About 3 per row */
+  max-width: 30%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+
+  .sub-image-event {
+    width: 100%;
+    /* max-width: 120px; */
+    height: auto;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 4px;
+  }
+
+  /* Buttons stacked vertically */
+  .actions-events {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    margin-top: 8px;
+  }
+}
+

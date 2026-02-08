@@ -1,0 +1,130 @@
+
+
+.projects-container {
+  /* width: 100%; */
+  min-height: 600px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+  padding: 50px 20px;
+}
+
+.projects-content {
+  display: flex;
+  flex-direction: row; /* Desktop: Text left, Image right */
+  width: 90%;
+  max-width: 1200px;
+  justify-content: space-between;
+  align-items: flex-start;
+  direction: rtl; /* Arabic Alignment */
+}
+
+/* --- First Part: Text Wrapper --- */
+.projects-text-wrapper {
+  width: 45%; /* Fixed width instead of flex:1 */
+}
+
+.projects-heading-flex {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.project-main-icon {
+  font-size: 40px;
+}
+
+.project-title {
+  color: #0044ff; /* Blue Heading */
+  font-size: 2.2rem;
+  margin: 0;
+}
+
+.project-description {
+  color: #000000; /* Black Paragraph */
+  line-height: 1.8;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 40px;
+  text-align: justify;
+}
+
+/* Circles Layout */
+.circles-row {
+  display: flex;
+  gap: 120px;
+  justify-content: flex-start;
+}
+
+.circle-item-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 120px;
+}
+
+.white-circle {
+  width: 80px;
+  height: 80px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Subtle shadow for white on white */
+  margin-bottom: 10px;
+}
+
+.circle-label {
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* --- Second Part: Image Wrapper --- */
+.projects-image-wrapper {
+  width: 35%; /* Fixed width */
+  display: flex;
+  justify-content: center;
+}
+
+.rounded-project-img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 50%; /* 50% border radius as requested */
+  object-fit: cover;
+}
+
+/* --- Responsive for Mobile --- */
+@media (max-width: 992px) {
+  .projects-content {
+    flex-direction: column; /* Stack vertically */
+    align-items: center;
+    text-align: center;
+  }
+
+  .projects-text-wrapper, 
+  .projects-image-wrapper {
+    width: 100%;
+  }
+.project-title {
+  margin-top: 30px;
+  font-size: 1.9rem;
+}
+  .projects-heading-flex {
+    justify-content: center;
+  }
+
+  .circles-row {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .projects-image-wrapper {
+    margin-top: 40px;
+    order: -1; /* Image appears on top for mobile */
+  }
+}

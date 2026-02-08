@@ -1,0 +1,208 @@
+/* Container and Background */
+.hero-container {
+      width: 100vw;
+  /* width: 100%; */
+  min-height: 700px;
+  background: linear-gradient(to right, #aacaf3, #3645ce);
+  /* background-color: blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  /* margin-top: 100px; */
+  overflow: hidden;
+  position: relative;
+  /* Creates the white curve at the bottom */
+  border-bottom-left-radius: 50% 15%;
+  border-bottom-right-radius: 50% 15%;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column; /* Mobile stack */
+  width: 90%;
+  max-width: 1200px;
+  align-items: center;
+  gap: 40px;
+  padding-top: 50px;
+}
+
+/* 1. Image Styling */
+.hero-image-wrapper {
+  width: 100%; /* Full width on mobile to center logo */
+  display: flex;
+  justify-content: center;
+}
+
+.hero-logo {
+  width: 290px; /* Fixed width for the logo */
+  height: auto;
+  margin-bottom: 40px;
+  border-radius: 50%;
+
+}
+
+/* 2. Text Wrapper Styling */
+.hero-text-wrapper {
+  width: 100%;
+  text-align: center;
+  direction: rtl;
+}
+
+/* 3. Title Styling - Edit this for font size/color */
+.hero-title {
+  width: 100%;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+
+/* 4. Description Styling - Edit this for line height/spacing */
+.hero-description {
+  width: 100%;
+  max-width: 600px; /* Limits description width for readability */
+  margin: 0 auto 30px auto;
+  font-size: 1.4rem;
+  /* font-weight: 500; */
+  line-height: 1.9;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* 5. Button Styling */
+.hero-button {
+  width: 180px; /* Explicit width for the button */
+  height: 70px; /* Explicit height */
+  background-color: #ffffff;
+  color: blue;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.hero-button:hover {
+  transform: scale(1.05);
+}
+/* --- Responsive Desktop Adjustment --- */
+@media (min-width: 992px) {
+  .hero-content {
+    flex-direction: row-reverse; /* Arabic RTL layout */
+    justify-content: space-between; 
+    padding-top: 190px;
+  }
+.hero-title {
+  /* width: 100%; */
+  font-size: 2.1rem;
+  /* font-weight: bold;
+  color: #ffffff; */
+  /* padding-top: 155px; */
+}
+  .hero-image-wrapper {
+    width: 40%; /* Logo takes up 40% of the row */
+  }
+
+  .hero-text-wrapper {
+    width: 55%; /* Text takes up 55% of the row */
+    text-align: right;
+  }
+
+  .hero-description {
+    margin: 0 0 30px 0; /* Align description to the right */
+  }
+}
+
+
+
+
+/* 
+
+
+
+.hero-container {
+  height: 500px;
+  direction: rtl;
+  background: linear-gradient(135deg, #a8badd, #97b1df);
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  padding: 40px 20px 80px;
+}
+
+.hero-content {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero-text {
+  width: 70%;
+  color: white;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.hero-text button {
+  background-color: white;
+  color: blue;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  opacity: 0.9;
+}
+
+.hero-image {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text,
+  .hero-image {
+    width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+

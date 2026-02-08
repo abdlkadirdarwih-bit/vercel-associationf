@@ -1,0 +1,318 @@
+
+
+
+.container-image-event{
+    /* background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX1fYSfhq_jTMMJVCzFayf_HSyKBMLVAPMrg&s.jpg)no-repeat center center/cover; */
+      
+    background: url(https://stateline.org/wp-content/uploads/2023/09/school-start-times.jpg)no-repeat center center/cover;
+      position: relative;
+        width: 100%;
+  min-height: 550px;
+    margin-top: 80px;
+    z-index: 1;   /* put the image layer lower */
+     /* height: 50vh; */
+  /* width: 1550px; */
+    /* min-height: 550px; */
+    /* background-size: cover; */
+/* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+.content-event {
+    position: absolute;
+    top:45%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+          background-color: gray;
+        opacity: 0.8;
+
+}
+
+.content-event h2 {
+  text-align: right;
+    font-size: 5rem;
+    color: #fff;
+}
+
+.content-event p {
+    font-size: 2rem;
+    color: #fff;
+}
+@media screen and (max-width:768px) {
+.container-image-event{
+  width: 100%;
+    /* min-height: 100%; */
+
+/* background-color: #fff; */
+}
+/* .content-about {
+    position: absolute;
+} */
+ .content-event {
+    top:25%;
+ }
+  .content-event h2 {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+}
+
+.sect1event {
+  /* font-family: "Montserrat", sans-serif; */
+  width: 1200px;
+  height: 250px;
+  /* display: flex; */
+  margin: 40px 50px 30px 200px;
+  box-shadow: 3px 2px 5px rgb(172, 163, 163);
+}
+
+.title-sec1-event {
+  /* width: 100px; */
+  text-align: right;
+  font-size: 28px;
+  font-weight: 500;
+  padding: 20px 90px 0px 0px;
+  color: rgb(55, 168, 11);
+  /* background-color: rgb(55, 168, 11); */
+  /* margin-bottom: 10px; */
+}
+
+.text-sec1-event {
+  /* width: 100px; */
+  text-align: right;
+  font-size: 18px;
+  /* font-weight: 500; */
+  padding: 30px 50px 0px 0px;
+  color: black;
+  /* margin-bottom: 10px; */
+}
+
+
+@media only screen and (max-width: 900px) {
+  .sect1event {
+    /* width: 400px; */
+    /* height: 250px; */
+    /* display: flex; */
+    /* margin: 40px 50px 30px 200px; */
+    background-color: none;
+  }
+
+
+
+}
+
+
+.sect2event {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* font-family: "Montserrat", sans-serif; */
+  /* width: 1200px; */
+  height: 800px;
+  /* display: flex; */
+  /* margin: 40px 50px 30px 200px; */
+  /* border: 2px solid rgb(55, 196, 85); */
+  /* box-shadow: 3px 2px 5px rgb(172, 163, 163); */
+}
+@media only screen and (max-width: 900px) {
+  .sect2event {
+    flex-direction: column;
+  }
+}
+/* .img1-title-description-event {
+
+} */
+
+.img1-event-sec2-sch {
+  width: 500px;
+  height: 200px;
+  padding-top: 50px;
+  /* margin: 0px 0px 0px 0px; */
+}
+
+.title-description-event {
+  width: 780px;
+  margin-bottom: 30px;
+  /* margin-left: 200px; */
+  /* background-color: rgb(55, 168, 11); */
+
+}
+
+.sect3-events {
+  /* display: block; */
+      min-height: 700px;
+
+  /* background-color: rgb(243, 176, 240); */
+}
+
+.sect3event {
+  /*font-family: "Montserrat", sans-serif; */
+  /* width: 1200px; */
+  /* min-height: 800px; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+    /* min-height: 700px; */
+  /* margin: 10px; */
+  gap: 10px;
+  /* margin: 0px 0px 0px 0px; */
+  /* padding-left: 150px; */
+  /* box-shadow: 3px 2px 5px rgb(172, 163, 163); */
+  /* background-color: rgb(243, 176, 240); */
+}
+.title-sec2-event {
+  /* width: 100px; */
+  text-align: center;
+  font-size: 28px;
+  font-weight: 500;
+  padding: 20px 10px 0px 0px;
+  color: rgb(226, 75, 75);
+  /* background-color: rgb(55, 168, 11); */
+  /* margin-bottom: 10px; */
+}
+
+
+.description-sec2-event {
+  /* width: 100px; */
+  text-align: center;
+  font-size: 18px;
+  /* font-weight: 500; */
+  padding: 10px 10px 0px 0px;
+  color: black;
+  /* margin-bottom: 10px; */
+}
+
+
+.title-text-sec3-events {
+    text-align: center;
+
+}
+.title-sec3-events {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  padding: 80px 0px 20px 0px;
+  margin-top: 90px;
+    color:  #6e76e2;
+}
+
+.text-sec3-events {
+  /* width: 100px; */
+  text-align: center;
+  font-size: 20px;
+  /* font-weight: 500; */
+  padding: 10px 10px 40px 0px;
+  color: black;
+  margin-bottom: 10px;
+}
+
+
+
+.listitems-event {
+  /* display: flex; */
+  width: 350px;
+  height: 430px;
+  /* margin: 20px 0px 0px 0px; */
+  /* margin: 10px; */
+  margin: 5px auto;
+  border: 2px solid #6e76e2;
+  color: white;
+  background-color: white;
+
+  /* background-color: rgb(11, 187, 172); */
+}
+
+
+
+.img2-event-sch {
+  /* width: 346px; */
+  width: 100%;
+  height: 200px;
+  /* margin: 75px 60px 0px 0px; */
+}
+
+
+@media only screen and (max-width: 900px) {
+  /* .sect3-events {
+  min-height: 900px;
+} */
+  .sect3events {
+        width: 85%;
+    flex-direction: column;
+  }
+  .listitems-event {
+            width: 90%;
+            /* margin-right: 20px; */
+      /* background-color: white; */
+
+  }
+  .title-text-sec3-events {
+    /* width:95%; */
+    padding-left: 10px;
+  }
+/* .img2-event-sch {
+  width:150px ;
+} */
+}
+
+.place-title-sec3-event {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 70px; */
+  min-height: 50px;
+  background-color: #6e76e2;
+}
+
+.date-sec3-event {
+  margin-left: 20px;
+gap: 20px;
+}
+.icontime{
+  font-size: 20px;
+padding-right:5px;
+/* color: #cf2b6f; */
+}
+.place-sec3-event {
+  /* width: 100px; */
+  /* text-align: right; */
+  /* font-size: 20px;
+  font-weight: 500; */
+  margin-right: 15px;
+  /* color: black; */
+  /* margin-bottom: 10px; */
+}
+
+.text-title-sec3-event {
+  /* background-color: white; */
+  /* margin: 20px; */
+}
+
+.title-sec3-event {
+  /* width: 100px; */
+  /* min-height: 50px; */
+padding: 10px;
+  text-align: right;
+  font-size: 25px;
+  font-weight: 500;
+  /* margin-bottom: 20px; */
+  color: black;
+  /* margin-bottom: 10px; */
+}
+
+.text-sec3-event {
+display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+
+
+padding-right: 10px;
+  color: black;
+  /* background-color: white; */
+  margin-bottom: 10px;
+   white-space: normal;   /* ✅ allow text to wrap */
+ word-wrap: break-word; /* ✅ break long words if needed */
+  overflow-wrap: break-word; /* ✅ modern equivalent */
+}

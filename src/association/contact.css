@@ -1,0 +1,90 @@
+
+
+
+/* Footer CTA Section */
+.cta-container {
+  width: 100%;
+  min-height: 500px;
+  /* background: linear-gradient(135deg, #00b4db, #2aad6c); */
+  background: linear-gradient(to bottom, #00b4db, #364cc7);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  text-align: center;
+  direction: rtl;
+}
+
+.cta-content {
+  width: 90%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cta-title {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 80px;
+}
+
+.cta-description {
+  color: white;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 110px;
+}
+
+.cta-button {
+  width: 200px;
+  height: 55px;
+  background-color: white;
+  color: #0044ff;
+  border: none;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  /* font-weight: bold; */
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+}
+
+/* Independent Copyright Bar */
+.copyright-bar {
+  width: 100%;
+  height: 60px;
+  background-color: #ffffff; /* White background as per screenshot */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #eeeeee;
+}
+
+.copyright-bar p {
+  color: #333333;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0;
+  direction: rtl;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .cta-title { font-size: 1.8rem; }
+  .cta-description { font-size: 1rem; }
+  .copyright-bar {
+         /* margin-bottom: 80px; */
+
+  }
+  .copyright-bar p {
+    text-align: center;
+    padding: 10px;
+     font-size: 1rem;
+ }
+}

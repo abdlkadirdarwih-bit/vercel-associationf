@@ -1,0 +1,152 @@
+
+
+
+
+
+.contacts-table-create-event-page {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 99vw;
+  min-height: 100vh;
+  padding-top: 130px;
+  background-color: rgb(205, 230, 155);
+  font-family: Arial, sans-serif;
+}
+
+.contacts-table-create-event-container {
+  width: 50%;
+  background-color: white;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.contacts-table-create-event-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #d64444;
+  background-color: #585ad1;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input {
+  padding: 10px 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: 0.2s;
+}
+.form-input::placeholder {
+  text-align: left;
+}
+.form-group .form-input:focus {
+  border: 2px solid black;
+  /* border-color: #4CAF50; */
+  /* box-shadow: 0 0 5px rgba(76, 175, 80, 0.3); */
+}
+
+.btn-select,
+.btn-add-image,
+.btn-remove,
+.btn-submit {
+  padding: 8px 12px;
+  margin-top: 5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  transition: 0.2s;
+}
+
+.btn-select {
+  background-color: #2196F3;
+  color: white;
+}
+
+.btn-select:hover {
+  background-color: #1976D2;
+}
+
+.btn-add-image {
+  background-color: #4CAF50;
+  color: white;
+  margin-bottom: 10px;
+}
+.img2-create-sch{
+  width: 100px;
+
+  /* width: 100%; */
+  min-height: 100px;
+}
+.btn-add-image:hover {
+  background-color: #388E3C;
+}
+
+.btn-remove {
+  background-color: #f44336;
+  color: white;
+  margin-left: 10px;
+}
+
+.btn-remove:hover {
+  background-color: #d32f2f;
+}
+
+.btn-submit {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin-top: 15px;
+  font-size: 1rem;
+}
+
+.btn-submit:hover {
+  background-color: #388E3C;
+}
+
+/* .image-preview {
+  margin-top: 10px;
+}
+
+.image-preview img {
+  max-width: 200px;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+} */
+
+.image-preview {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center; /* center the image */
+}
+
+.image-preview img {
+  width: 100%;       /* take full width of parent */
+  max-width: 200px;  /* limit maximum size */
+  height: auto;      /* maintain aspect ratio */
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+  .contacts-table-create-event-container {
+  width: 90%;
+  }
+}
+
+
+
+
+
+
+

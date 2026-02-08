@@ -1,0 +1,114 @@
+
+
+.eventview{
+    margin-top: 120px;
+}
+
+
+
+
+
+
+
+.page-admins{
+     /* width: 100%; */
+  width: 99vw;
+  min-height: 100vh; 
+    margin-top: 200px;
+    /* margin-right: 10px; */
+  /* background-color: rgb(205, 230, 155); */
+  /* border: 1px solid; */
+  /* overflow-x: hidden;  */
+}
+
+
+.btn-events{
+  display: flex;
+  justify-content: flex-end; /* center | flex-start if you want */
+  margin-bottom: 20px;
+}
+
+.btn-event {
+
+  background-color: #2e19a5;
+  color: white;
+    /* float: right;        */
+
+  padding: 5px 12px;
+  margin-bottom: 35px ;
+  /* margin-right:190px ; */
+  /* margin-left: 1200px; */
+  font-size: 1rem;
+    transition: background 0.2s;
+
+}
+
+.btn-event:hover {
+  background-color: #7b79da;
+}
+.page-admin1{
+     /* width: 100%; */
+  /* display: flex; 
+  flex-wrap: wrap; */
+  /* min-height: 600px; */
+ padding-top: 195px;
+ 
+  /*border: 1px solid; */
+}
+.page-admin2{
+     /* width: 100%; */
+  display: flex; 
+  flex-wrap: wrap;
+    align-items: flex-start;  /* ← IMPORTANT */
+  justify-content: center;
+  gap: 20px;
+  /* min-height: 600px; */
+  /* padding-top: 195px; */
+/* border: 1px solid; */
+}
+
+
+
+
+/* event admin css */
+.sect3-admin {
+  /* display: block; */
+
+      /* min-height: 700px; */
+  /* margin-right: 10px; */
+
+  /* background-color: rgb(243, 176, 240); */
+}
+
+.sect3admin{
+  /* font-family: "Montserrat", sans-serif; */
+  /* width: 1200px; */
+  /* min-height: 800px; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* width: 100%; */
+
+  /* max-width: 800px; */
+  /* padding-left: 0px; */
+  /* margin: 50px; */
+  /* margin-left: 15px; */
+  /* margin-right: 10px; */
+    /* min-height: 700px; */
+  /* margin: 10px; */
+   margin: 0 auto; 
+     margin-bottom: 120px;
+
+/* margin: 0 auto 0 20px;  */
+  gap: 10px;
+  /* border: 3px solid rgb(205, 230, 155); */
+    overflow: hidden;
+  box-sizing: border-box;
+
+  /* margin: 0px 0px 0px 0px; */
+  /* padding-left: 150px; */
+  /* box-shadow: 3px 2px 5px rgb(127, 212, 149); */
+  /* background-color: rgb(243, 176, 240); */
+}
+

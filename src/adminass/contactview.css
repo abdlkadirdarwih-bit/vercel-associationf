@@ -1,0 +1,109 @@
+/* Wrapper centers table and sets width to 80% */
+.contacts-table-messages-wrapper {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin: 20px auto; /* center horizontally with top/bottom spacing */
+ margin-top: 200px;
+  border: 3px solid rgb(205, 230, 155);
+  overflow-x: auto; /* allow horizontal scroll on very small screens */
+}
+
+/* Table styling */
+.contacts-table-messages {
+  width: 100%;  
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  background: #fff;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.thead-messages {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.thead-messages-th {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.tr-messages td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+  white-space: normal;   
+  word-wrap: break-word; 
+  overflow-wrap: break-word;
+  max-width: 200px;      
+}
+
+.tr-messages td:first-child {
+  text-align: center;
+  width: 50px;
+  font-weight: bold;
+}
+
+/* Delete button */
+.btn-delete-message {
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btn-delete-message:hover {
+  background: rgb(223, 127, 127);
+}
+
+/* Confirm overlay */
+.confirm-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(241, 231, 231, 0.096);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.confirm-box {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.confirm-box button {
+  margin-left: 10px;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .contacts-table-messages-wrapper {
+    width: 95%;
+    margin: 20px auto;
+     margin-top: 200px;
+
+  }
+
+  .contacts-table-messages {
+    width: 100%;
+    table-layout: fixed;
+    font-size: 14px;
+  }
+
+  .tr-messages td,
+  .thead-messages-th {
+    padding: 8px;
+    max-width: 100px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+}

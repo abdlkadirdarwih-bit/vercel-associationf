@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+.text-headerass {
+  text-align: center;
+  margin-top: 150px;
+  direction: rtl;
+}
+
+.h1-blueass {
+  color: #0044ff; /* Blue H1 */
+  font-size: 2.5rem;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+.p-blackass {
+  color: #000000; /* Black P */
+  max-width: 600px;
+  line-height: 1.6;
+    font-weight: 500;
+    font-size: 18px;
+      margin-bottom: 70px;
+
+}
+
