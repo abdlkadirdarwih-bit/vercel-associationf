@@ -46,8 +46,8 @@ export default function Contactview() {
 
   const confirmDeleteMessage = () => {
     axios
-      // .delete(`${backendUrl}/deleteMessage/${confirmDelete}`)
-      .delete('http://localhost:3001/deleteMessage/${confirmDelete}')
+      .delete(`${backendUrl}/deleteMessage/${confirmDelete}`)
+      // .delete('http://localhost:3001/deleteMessage/${confirmDelete}')
 
       .then(() => {
         setContacts(prev => prev.filter(msg => msg._id !== confirmDelete));
