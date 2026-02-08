@@ -4,6 +4,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 
+const backendUrl = import.meta.env.VITE_BACKEND_URL;
 
 
 // import './Services.css';

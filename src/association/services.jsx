@@ -7,6 +7,7 @@ import axios from "axios";
 import myImage from "../assets/WhatsApp Image 2026-01-25 at 10.31.44 PM.jpeg";
 
 import { useNavigate } from 'react-router-dom';
+const backendUrl = import.meta.env.VITE_BACKEND_URL;
 
 // // ServiceCard.jsx
 // const ServiceCard = ({ title, description, icon, isGradient }) => {
